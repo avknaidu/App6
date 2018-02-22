@@ -1,0 +1,107 @@
+﻿<Page
+    x:Class="App6.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:App6"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:extensions="using:Microsoft.Toolkit.Uwp.UI.Extensions"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Grid Margin="10">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <TextBlock Text="Regex" VerticalAlignment="Center"/>
+            <TextBox x:Name="textBox" Margin="10,0" HorizontalAlignment="Stretch" Grid.Column="1" Text="^(\([0-9]{3}\) |[0-9]{3}-)[0-9]{3}-[0-9]{4}|(\([0-9]{3}\)|[0-9]{3})[0-9]{3}[0-9]{4}$"/>
+        </Grid>
+        <StackPanel Orientation="Vertical" Grid.Row="1" Margin="10" x:Name="MyGrid" >
+            <StackPanel Margin="10,10,10,0">
+                <TextBox Name="PhoneNumberValidator"
+                 extensions:TextBoxRegex.Regex="{Binding Text, ElementName=textBox, Mode=TwoWay}" />
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="Is Valid: " />
+                    <TextBlock Text="{Binding (extensions:TextBoxRegex.IsValid), ElementName=PhoneNumberValidator}" />
+                </StackPanel>
+            </StackPanel>
+            <StackPanel Margin="10,10,10,0">
+                <TextBox Name="PhoneNumberValidator2"
+                 extensions:TextBoxRegex.Regex="{Binding Text, ElementName=textBox, Mode=TwoWay}" />
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="Is Valid: " />
+                    <TextBlock Text="{Binding (extensions:TextBoxRegex.IsValid), ElementName=PhoneNumberValidator2}" />
+                </StackPanel>
+            </StackPanel>
+            <StackPanel Margin="10,10,10,0">
+                <TextBox Name="PhoneNumberValidator3"
+                 extensions:TextBoxRegex.Regex="{Binding Text, ElementName=textBox, Mode=TwoWay}" />
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="Is Valid: " />
+                    <TextBlock Text="{Binding (extensions:TextBoxRegex.IsValid), ElementName=PhoneNumberValidator3}" />
+                </StackPanel>
+            </StackPanel>
+            <StackPanel Margin="10,10,10,0">
+                <TextBox Name="PhoneNumberValidator4"
+                 extensions:TextBoxRegex.Regex="{Binding Text, ElementName=textBox, Mode=TwoWay}" />
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="Is Valid: " />
+                    <TextBlock Text="{Binding (extensions:TextBoxRegex.IsValid), ElementName=PhoneNumberValidator4}" />
+                </StackPanel>
+            </StackPanel>
+            <StackPanel Margin="10,10,10,0">
+                <TextBox Name="PhoneNumberValidator5"
+                 extensions:TextBoxRegex.Regex="{Binding Text, ElementName=textBox, Mode=TwoWay}" />
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="Is Valid: " />
+                    <TextBlock Text="{Binding (extensions:TextBoxRegex.IsValid), ElementName=PhoneNumberValidator5}" />
+                </StackPanel>
+            </StackPanel>
+            <StackPanel Margin="10,10,10,0">
+                <TextBox Name="PhoneNumberValidator6"
+                 extensions:TextBoxRegex.Regex="{Binding Text, ElementName=textBox, Mode=TwoWay}" />
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="Is Valid: " />
+                    <TextBlock Text="{Binding (extensions:TextBoxRegex.IsValid), ElementName=PhoneNumberValidator6}" />
+                </StackPanel>
+            </StackPanel>
+            <StackPanel Margin="10,10,10,0">
+                <TextBox Name="PhoneNumberValidator7"
+                 extensions:TextBoxRegex.Regex="{Binding Text, ElementName=textBox, Mode=TwoWay}" />
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="Is Valid: " />
+                    <TextBlock Text="{Binding (extensions:TextBoxRegex.IsValid), ElementName=PhoneNumberValidator7}" />
+                </StackPanel>
+            </StackPanel>
+            <StackPanel Margin="10,10,10,0">
+                <TextBox Name="PhoneNumberValidator8"
+                 extensions:TextBoxRegex.Regex="{Binding Text, ElementName=textBox, Mode=TwoWay}" />
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="Is Valid: " />
+                    <TextBlock Text="{Binding (extensions:TextBoxRegex.IsValid), ElementName=PhoneNumberValidator8}" />
+                </StackPanel>
+            </StackPanel>
+            <StackPanel Margin="10,10,10,0">
+                <TextBox Name="PhoneNumberValidator9"
+                 extensions:TextBoxRegex.Regex="{Binding Text, ElementName=textBox, Mode=TwoWay}" />
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="Is Valid: " />
+                    <TextBlock Text="{Binding (extensions:TextBoxRegex.IsValid), ElementName=PhoneNumberValidator9}" />
+                </StackPanel>
+            </StackPanel>
+            <StackPanel Margin="10,10,10,0">
+                <TextBox Name="PhoneNumberValidator10"
+                 extensions:TextBoxRegex.Regex="{Binding Text, ElementName=textBox, Mode=TwoWay}" />
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="Is Valid: " />
+                    <TextBlock Text="{Binding (extensions:TextBoxRegex.IsValid), ElementName=PhoneNumberValidator10}" />
+                </StackPanel>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Page>
